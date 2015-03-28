@@ -1,3 +1,4 @@
 # EcoStream-android
 
-To contribute, install Android Studio http://developer.android.com/sdk/index.html and import project. We are strictly following this code style https://source.android.com/source/code-style.html. 
+1. install Android Studio http://developer.android.com/sdk/index.html and import project.
+2. parse.com login: ltcwendell@yahoo.com, 12345678

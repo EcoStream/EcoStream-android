@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_blue">
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!-- Sensor 1 -->
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sensor_1"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sensor_1"
+            android:textSize="25sp"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowColor="#ff155165"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"/>
+
+        <!-- Sensor 2 -->
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sensor_2"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/sensor_1"
+            android:layout_marginTop="30dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sensor_2"
+            android:textSize="25sp"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowColor="#ff155165"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"/>
+
+        <!-- line chart -->
+        <info.hoang8f.widget.FButton
+            android:id="@+id/line_chart"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/sensor_2"
+            android:layout_marginTop="80dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/line_chart"
+            android:textSize="25sp"
+            fbutton:buttonColor="@color/fbutton_color_belize_hole"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowColor="#ff155165"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

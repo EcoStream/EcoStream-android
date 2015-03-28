@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">EcoStream-android</string>
+    <string name="app_name">EcoStream</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="sensor_1">Sensor No.1</string>
+    <string name="sensor_2">Sensor No.2</string>
+    <string name="line_chart">Line chart</string>
+
+    <string name="line_chart_unit">flow rate (%) / time</string>
+
 </resources>

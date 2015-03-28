@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/main_blue">
+
+
+    <org.eazegraph.lib.charts.ValueLineChart
+        android:id="@+id/cubiclinechart"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:egAxisTextColor="@android:color/black"
+        app:egCurveSmoothness="0.3"
+        app:egLegendColor="@android:color/black"
+        app:egLegendHeight="50dp"
+        app:egLegendTextSize="15sp"
+        app:egLineStroke="4dp"
+        app:egUseCubic="true"
+        app:egUseDynamicScaling="true"
+        app:egUseOverlapFill="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cubiclinechart"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/line_chart_unit"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@integer/fragment_slide_time_milli"
+    android:interpolator="@android:interpolator/accelerate_quad"
+    android:propertyName="x"
+    android:valueFrom="-@integer/screen_width_px"
+    android:valueTo="0"
+    android:valueType="floatType" />

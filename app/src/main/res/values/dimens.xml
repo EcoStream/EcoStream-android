@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="fragment_slide_time_milli">300</integer>
+    <integer name="pie_char_anime_time_milli">500</integer>
+    <integer name="screen_width_px">720</integer>
+</resources>

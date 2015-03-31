@@ -30,10 +30,43 @@
             android:layout_width="220dp"
             android:layout_height="60dp"
             android:layout_below="@id/sensor_1"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:clickable="true"
             android:gravity="center"
             android:text="@string/sensor_2"
+            android:textSize="25sp"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowColor="#ff155165"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"/>
+
+        <!-- Sensor 3 -->
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sensor_3"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/sensor_2"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sensor_3"
+            android:textSize="25sp"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowColor="#ff155165"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="3dp"/>
+
+
+        <!-- Sensor 4 -->
+        <info.hoang8f.widget.FButton
+            android:id="@+id/sensor_4"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/sensor_3"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/sensor_4"
             android:textSize="25sp"
             fbutton:cornerRadius="2dp"
             fbutton:shadowColor="#ff155165"
@@ -45,8 +78,8 @@
             android:id="@+id/line_chart"
             android:layout_width="220dp"
             android:layout_height="60dp"
-            android:layout_below="@id/sensor_2"
-            android:layout_marginTop="80dp"
+            android:layout_below="@id/sensor_4"
+            android:layout_marginTop="50dp"
             android:clickable="true"
             android:gravity="center"
             android:text="@string/line_chart"

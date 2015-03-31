@@ -3,6 +3,8 @@
 
     <string name="sensor_1">Sensor No.1</string>
     <string name="sensor_2">Sensor No.2</string>
+    <string name="sensor_3">Sensor No.3</string>
+    <string name="sensor_4">Sensor No.4</string>
     <string name="line_chart">Line chart</string>
 
     <string name="line_chart_unit">flow rate (%) / time</string>

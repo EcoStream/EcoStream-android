@@ -10,8 +10,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.ecosteam.ecostream_android.Constant;
-import com.ecosteam.ecostream_android.cloud.ParseDataFactory;
 import com.ecosteam.ecostream_android.R;
+import com.ecosteam.ecostream_android.cloud.ParseDataFactory;
 import com.ecosteam.ecostream_android.cloud.RetrieveDataCallback;
 
 import org.eazegraph.lib.charts.PieChart;
@@ -24,13 +24,13 @@ import java.util.TimerTask;
 public class PieChartFragment extends Fragment implements RetrieveDataCallback {
     private static final String TAG = "PieDisPlayFragment";
 
-
     private static int mSensorId;
     private TextView mLabel;
     private PieChart mPieChart;
     private PieModel mPositive;
     private PieModel mNegative;
     private Timer mTimer;
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_pie_chart, container, false);
@@ -40,6 +40,10 @@ public class PieChartFragment extends Fragment implements RetrieveDataCallback {
             getActivity().getActionBar().setTitle(R.string.sensor_1);
         } else if (mSensorId == R.id.sensor_2) {
             getActivity().getActionBar().setTitle(R.string.sensor_2);
+        } else if (mSensorId == R.id.sensor_3) {
+            getActivity().getActionBar().setTitle(R.string.sensor_3);
+        } else if (mSensorId == R.id.sensor_4) {
+            getActivity().getActionBar().setTitle(R.string.sensor_4);
         }
 
 
@@ -51,7 +55,7 @@ public class PieChartFragment extends Fragment implements RetrieveDataCallback {
         mPieChart.startAnimation();
 
         mLabel = (TextView) view.findViewById(R.id.label);
-        mLabel.setText("0% flow rate");
+        mLabel.setText("0");
 
         mTimer = new Timer();
         mTimer.scheduleAtFixedRate(new TimerTask() {
@@ -60,6 +64,10 @@ public class PieChartFragment extends Fragment implements RetrieveDataCallback {
                     ParseDataFactory.retrieveData(Constant.SENSOR_1_TABLE, 1, PieChartFragment.this);
                 } else if (mSensorId == R.id.sensor_2) {
                     ParseDataFactory.retrieveData(Constant.SENSOR_2_TABLE, 1, PieChartFragment.this);
+                } else if (mSensorId == R.id.sensor_3) {
+                    ParseDataFactory.retrieveData(Constant.SENSOR_3_TABLE, 1, PieChartFragment.this);
+                } else if (mSensorId == R.id.sensor_4) {
+                    ParseDataFactory.retrieveData(Constant.SENSOR_4_TABLE, 1, PieChartFragment.this);
                 }
             }
         }, 0, Constant.FETCHING_RATE_MILLIS);
@@ -79,7 +87,6 @@ public class PieChartFragment extends Fragment implements RetrieveDataCallback {
             return;
         }
 
-
         int val = Integer.parseInt(list.get(0));
         updatePieChar(val);
     }
@@ -88,7 +95,6 @@ public class PieChartFragment extends Fragment implements RetrieveDataCallback {
         mPositive.setValue(val);
         mNegative.setValue(100 - val);
         mPieChart.update();
-
         mLabel.setText(val + "% flow rate");
     }
 }

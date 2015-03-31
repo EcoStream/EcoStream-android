@@ -36,6 +36,24 @@ public class MainFragment extends Fragment {
             }
         });
 
+        // Sensor 3 button
+        View sensor_3 = view.findViewById(R.id.sensor_3);
+        sensor_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startPieFragment(R.id.sensor_3);
+            }
+        });
+
+        // Sensor 4 button
+        View sensor_4 = view.findViewById(R.id.sensor_4);
+        sensor_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startPieFragment(R.id.sensor_4);
+            }
+        });
+
         View line_char = view.findViewById(R.id.line_chart);
         line_char.setOnClickListener(new View.OnClickListener() {
             @Override
